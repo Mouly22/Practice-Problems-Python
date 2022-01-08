@@ -1,6 +1,6 @@
 myDict = {}
 while(True):
-    x = input()
+    x = input().split()
     if x == "STOP":
         break 
     else:
@@ -8,4 +8,7 @@ while(True):
             myDict.update({x: 1})
         else:
             myDict[x] += 1
+            
     print(myDict)
+
+        
