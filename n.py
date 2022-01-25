@@ -11,3 +11,9 @@ while(True):
             dict[n] += 1
 
 print(dict)
+
+x = 'AABAABBAA'
+for lst in x:
+    y = x.count(lst)
+    
+print(y)
