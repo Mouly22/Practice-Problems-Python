@@ -12,6 +12,7 @@ for i in x:
         print(y, end = " ")  
     else:
         print(y, end = ", ")
+        
 #solve: using while loop 
 x = 32768 
 while x:
