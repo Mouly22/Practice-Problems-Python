@@ -1,43 +1,31 @@
-#adding two dict together
-dict1 = {'Harry':15, 'Draco':8, 'Nevil':19}
-dict2 = {'Ginie':18, 'Luna': 14}
-dict1.update(dict2)
-print(dict1)
+#Write Python code of a program that reads an integer, and prints the integer if it is a multiple of either 2 or 5.
+#Input:5 Output: 5.  Input: 3 Output: Not a multiple
+x = 3
+if x% 2 == 0 or x% 5 == 0:
+    print(x)
+else:
+    print("Not a multiple")
 
-#if they say dict 1 and 2 will remain unchanged, then we have to copy dict1;then we'll add dict2 with it
-dict1 = {'Harry':15, 'Draco':8, 'Nevil':19}
-dict2 = {'Ginie':18, 'Luna': 14}
-dict3 = dict1.copy()
-dict3.update(dict2)
-print(dict3)
+#Write Python code of a program that reads an integer, and prints the integer it is a multiple of either 2 or 5 but not both.
+#Input: 10 Output: multiple of 2 and 5 both  Input: 5 Output: 5
+x = 5
+if x% 2 ==0 and x% 5 ==0:
+    print("both")
+else:
+    print(x)
 
+#Write Python code of a program that reads an integer, and prints the integer if it is a multiple of 2 and 5.
+#Input:5 Output: Not multiple of 2 and 5 both. Input:40 Output: 40
+x = 5
+if x% 2 == 0 and x% 5 ==0:
+    print(x)
+else:
+    print("Not multiple of 2 and 5 both")
 
-#take a input dict from the user
-n = 2
-d = dict(input("Enter: ").split() for i in range(n))        #while taking input write one key-value in only line and go to the next line
-print(d)
-
-#or,
-val="""name mouly
-age 21
-home bogura"""
-    
-y = dict(x.split() for x in val.splitlines())
-print(y)
-
-#or
-n = int(input("enter a n value:"))
-d = {}
-for i in range(n):
-    keys = input() # here i have taken keys as strings
-    values =input() # here i have taken values as integers
-    d[keys] = values
-print(d)
-
-#or,
-n = int(input())          #n is the number of items you want to enter
-d ={}                     
-for i in range(n):        
-    text = input().split()     #split the input text based on space & store in the list 'text'
-    d[text[0]] = text[1]       #assign the 1st item to key and 2nd item to value of the dictionary
-print(d)
+#Write Python code of a program that reads an integer, and prints the integer if it is a multiple of NEITHER 2 NOR 5.
+#Input:3 Output:3. Input: 5 Output: No
+x = 12
+if x % 2 != 0 and x%5 != 0:
+    print(x)
+else:
+    print("No")
