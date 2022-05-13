@@ -1,21 +1,28 @@
-#Write Python code of a program that reads an integer, and prints the integer if it is a multiple of either 2 or 5.
-#Input:5 Output: 5.  Input: 3 Output: Not a multiple
-x = 3
-if x% 2 == 0 or x% 5 == 0:
-    print(x)
-else:
-    print("Not a multiple")
+#Write Python code of a program that finds the number of hours, minutes, and seconds in a given number of seconds.
+#Example01: Input: 10000 Output: Hours: 2 Minutes: 46 Seconds: 40
+#==========================================================
+#Example02: Input: 500 Output: Hours: 0 Minutes: 8 Seconds: 20
+x = 500
+hr = x//3600
+p = x % 3600
+min = p//60
+q = p % 60
 
-#Write Python code of a program that reads an integer, and prints the integer it is a multiple of either 2 or 5 but not both.
-#Input: 10 Output: multiple of 2 and 5 both  Input: 5 Output: 5
-x = 5
-if x% 2 ==0 and x% 5 ==0:
-    print("both")
-else:
-    print(x)
+print("Hours:", hr, "Minutes:", min, "Seconds:", q)
 
 
-
+#Suppose the following expressions are used to calculate the values of L for different values of S:
+#𝐿=3000−125𝑆^2 L= 3000− 125S^2 if  𝑆<100 S<100
+#𝐿=120004+𝑆2/14900 L=12000^4+S^2/ 14900 if  𝑆≥100 S ≥ 100
+#Write a Python code of a program that reads a value of S and then calculates the value of L.
+#Example01: Input: 120 Output: 2416.2162162162163. Example02: Input: 3 Output: 1875
+S = 120
+if S < 100:
+    L = 3000 - (125*(S**2))
+    print(L)
+elif S >= 100:
+    L = 12000/(4 + (S**2 / 14900))
+    print(L)
 
 
 
