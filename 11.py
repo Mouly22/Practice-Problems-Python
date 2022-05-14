@@ -1,14 +1,5 @@
-myDict = {}
-while(True):
-    x = input().split()
-    if x == "STOP":
-        break 
-    else:
-        if x not in myDict:
-            myDict.update({x: 1})
-        else:
-            myDict[x] += 1
-            
-    print(myDict)
-
-        
+#Write a python program that prints a square of size N using + where N will be given as input as illustrated in the examples below.
+x = 5
+for i in range(x):
+    y = ("+"* x)
+    print(y)
