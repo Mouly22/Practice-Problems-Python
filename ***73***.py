@@ -27,7 +27,7 @@
 def individul_bonus_calculation(*args):
     lst = []
     for k in range((len(args))//4):
-        lst.append([args[0+4*k],args[1+4*k],args[2+4*k],args[3+4*k]])
+        lst.append([ args[0+4*k],args[1+4*k],args[2+4*k],args[3+4*k] ])       #appending a list inside another list
         if args[2+4*k] > 30:
             x = 10000
         elif args[2+4*k] > 20 and args[2+4*k] <= 30:
