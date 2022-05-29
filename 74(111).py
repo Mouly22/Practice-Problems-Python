@@ -1,4 +1,4 @@
-# 1. From a given string, print the string in all uppercase if the number of uppercase letters is more than lowercase letters. Otherwise, if lowercase is greater or equal to uppercase letters, print all lowercase. The inputs will contain letters (A-Z, a-z) only.
+# From a given string, print the string in all uppercase if the number of uppercase letters is more than lowercase letters. Otherwise, if lowercase is greater or equal to uppercase letters, print all lowercase. The inputs will contain letters (A-Z, a-z) only.
 # SampleInput  Sample Output
 # HOusE        HOUSE
 # ApplE        apple
