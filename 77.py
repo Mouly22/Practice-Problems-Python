@@ -3,7 +3,7 @@
 # Sample Input      Sample Output
 # baNgladEsh        glad
 # coDIng            BLANK
-k = 'coDing'
+k = 'coDIng'
 count1 = 0
 count2 = 0
 g = ''
@@ -24,7 +24,5 @@ for j in range(len(g)):
                 oh = "BLANK"
             else:
                 oh = g[:j]
-        else:
-            oh = "Somthing's wrong. Please check again."
             
 print(oh)
