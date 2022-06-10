@@ -9,3 +9,4 @@ def fun1(**sub):
     print(f"My firend is", sub['CSE'])
 
 fun1(biotech= 'ohi', microbio = 'onnesha', CSE = 'Samiha')
+print(fun1)

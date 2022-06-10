@@ -66,3 +66,4 @@ for i in exam_marks:
     if exam_marks[i] >= p:
         dict[i] = exam_marks[i]
 print(dict)
+print(dict)
