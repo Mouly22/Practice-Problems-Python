@@ -8,9 +8,10 @@ p = 23445
 if p == str(p):
     q = p.isalpha()
     if q == False:
-        print("MIXED")
+        a="MIXED"
     else:
-        print("WORD")
+        a="WORD"
 else:
     if p == int(p):
-        print("NUMBER")
+        a="NUMBER"
+print(a)
