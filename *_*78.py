@@ -20,7 +20,7 @@ def phonebook(*vals):
         else:
             if p[0] not in dct[a].keys():
                 dct[a][p[0]] = p[-1]
-    return dct
+    
     print(dct)
     
     
