@@ -6,5 +6,6 @@ def computepay(x, y):
     else:
         v1 = x*y
         return v1
+    
 p = computepay(float(input("Enter hour: ")),float(input("Enter rate: ")))
 print(p)
