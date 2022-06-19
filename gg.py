@@ -1,19 +1,3 @@
-lst = input("Enter a list: ").split(", ")
-dict = {}
-count = 0
-for i in range(len(lst)):
-    count += 1
-    level = lst[i]
-    p = str(count) +"_"+level[0:2]+"_"+level[-1:-5]
-    if level not in dict:
-        nlst = []
-        nlst.append(p)
-        dict[level] = nlst
-        
-    else:
-        dict[level].append(p)
-print(dict)
-
 
 #You will be given a String S which contains only two characters - A and B. Your task is to find some substring pattern P in that string.
 #The pattern P is - a substring will contain an equal number of A and B in each side.
