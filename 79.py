@@ -5,19 +5,7 @@
 # Write a python program that will convert this tuple into the following dictionary using the process described below:
 # Your code should work for all types of similar tuple if the sample input is changed.
 # Output dictionary (You just have to print the resultant dictionary. No need to follow the pattern below):
-# {
-# 'Forward':
-#  {
-#  'Brazil': ('Firmino', 'Gabriel'),
-#  'Argentina': ('Messi', 'Aguero'),
-#  'Germany': ('Klose', 'Werner')
-#  }
-# 'Midfielder':
-#  {
-#  'Brazil': ('Casemiro', 'Fred')
-#  'Germany': 'Toni'
-#  }
-# }
+# {'Forward': { 'Brazil': ('Firmino', 'Gabriel'), 'Argentina': ('Messi', 'Aguero'), 'Germany': ('Klose', 'Werner') } 'Midfielder': { 'Brazil': ('Casemiro', 'Fred') 'Germany': 'Toni' }}
 # CONTINUATION:
 # Here you need to convert the given tuple into the output using the 4 digit 
 # ID. The rules are given below:
