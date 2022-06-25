@@ -42,8 +42,6 @@ for i in range(n):
     d[text[0]] = text[1]       #assign the 1st item to key and 2nd item to value of the dictionary
 print(d)
 
-
-
 #nested dic
 dic  = {}
 dic['mouly'] = {}
