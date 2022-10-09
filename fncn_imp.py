@@ -20,7 +20,7 @@ func(' 20')
 
 
 #use of global a:
-s = 'Fahad is cute.'
+s = 'Mugdho is cute.'
 print(s)
 def func1(m, n ):
     global s
@@ -30,7 +30,7 @@ def func1(m, n ):
     print(s)
     s = s + n
     
-func1(' He loves mouly <3.', 'She loves fahad <3.')
+func1(' He loves mouly <3.', 'She beats mugdho.')
 print(s)
 
 
