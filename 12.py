@@ -1,4 +1,5 @@
-#Write a python program that prints a rectangle of size M (height/line numbers) and N (length/column numbers) using incrementing numbers where M and N will be given as input. Please look at the examples below for clarification.
+#Write a python program that prints a rectangle of size M (height/line numbers) and N (length/column numbers) using incrementing numbers 
+#where M and N will be given as input. Please look at the examples below for clarification.
 M = 4
 N = 6
 sum = ""
