@@ -1,7 +1,7 @@
 # Write a python program that will take N as input from the user and then take N lines of input from the user. Each line will contain a tennis player name, year and tournament name that he won that year. Store each player's championship information in a dictionary where the key will be the player name and corresponding value will be a list containing all the tournaments the player won along with the year of the tournament. 
 # Sample Input 1:
 # 6
-# 2021 AustralianOpen Djokovic
+# ztm-zdas-und
 # 2021 FrenchOpen Djokovic
 # 2020 FrenchOpen Nadal
 # 2020 USOpen Dominic

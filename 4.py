@@ -11,6 +11,16 @@ q = p % 60
 print("Hours:", hr, "Minutes:", min, "Seconds:", q)
 
 
+given = int(input())
+hrs = given // 3600
+p = given % 3600
+mns = p // 60
+sc = p % 60
+print(f'Hours: {hrs} Minutes: {mns} Seconds: {sc}')
+
+
+
+
 #Suppose the following expressions are used to calculate the values of L for different values of S:
 #𝐿=3000−125𝑆^2 L= 3000− 125S^2 if  𝑆<100 S<100
 #𝐿=120004+𝑆2/14900 L=12000^4+S^2/ 14900 if  𝑆≥100 S ≥ 100

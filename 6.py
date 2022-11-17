@@ -1,4 +1,5 @@
-#Write a Python code for the following: 1) Ask the user to enter the name of his favorite car. 2) Ask the user to enter a Number. Display the name of the user’s favorite car, the number of times specified in the second step.
+#Write a Python code for the following: 1) Ask the user to enter the name of his favorite car. 2) Ask the user to enter a Number.
+# Display the name of the user’s favorite car, the number of times specified in the second step.
 #Sample Input 1: Toyota 2 Sample Output 1: Toyota Toyota
 x = "Veyron"
 y = 3
@@ -56,8 +57,3 @@ for i in range(5):
     x = int(input())
     g += x
     print(g)
-
-
-
-
-
