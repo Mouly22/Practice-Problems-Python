@@ -1,7 +1,49 @@
-# An Arithmetic Progression is defined as one in which there is a constant difference between the consecutive terms of a given series of numbers. You are provided with consecutive elements of an Arithmetic Progression. There is however one hitch: exactly one term from the original series is missing from the set of numbers which have been given to you. The rest of the given series is the same as the original AP. Find the missing term.
+inpf = open('input4.txt', 'r')
+outf = open('output4.txt', 'w')
+val1 = inpf.readlines()
+id = val1[1].split()
+marks = val1[2].split()
+num_lst = []
+val_lst = []
+dct = {}
+for i in range(len(marks)):
+    if int(marks[i]) not in dct.keys():
+        num_lst.append(int(marks[i]))
+        val_lst.append(int(id[i]))
+        dct[int(marks[i])] = [id[i]]
+    else:
+        dct[int(marks[i])].append(id[i])
+        val_lst.append(int(id[i]))
 
-# You have to write a function that receives a list, list size will always be at least 3 numbers. The missing term will never be the first or last one.
-#find_missing([1, 3, 5, 9, 11]) == 7
+#for descending
+for p in range(len(num_lst)):
+    max_indx = p
+    for q in range(p+1, len(num_lst)):
+        if num_lst[q] > num_lst[max_indx]:
+            max_indx = q
+    if max_indx != p:
+        temp = num_lst[p]
+        num_lst[p] = num_lst[max_indx]
+        num_lst[max_indx] = temp
+
+#for ascending
+def selection(val_lst):
+    for u in range(len(val_lst)):
+        min_indx = u
+        for v in range(u+1, len(val_lst)):
+            if val_lst[v] < val_lst[min_indx]:
+                min_indx = v
+        if min_indx != u:
+            temp = val_lst[u]
+            val_lst[u] = val_lst[min_indx]
+            val_lst[min_indx] = temp
+    return val_lst
+
+
+for k in num_lst:
+    for l in selection(dct[k]):
+        outf.write(f'ID {l} Mark: {k}\n')
+inpf.close()
 
 
 
