@@ -10,3 +10,6 @@ def binary_sort(lst):
     
 lst = [2, 4, 10, 100, 56, 21, 7, 7]
 binary_sort(lst)
+
+
+#Complexity {BigO(n^2)}
