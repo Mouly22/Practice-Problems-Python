@@ -14,6 +14,23 @@
 #a
 #Sample Output 3:
 #hi
+
+
+inp1 = input("Enter a string: ")
+inp2 = input("Enter a character: ")
+for i in range(len(inp1)):
+    if inp2 in inp1:
+        var = inp1.replace(inp2, "")
+       
+    elif inp2 not in inp1:
+        if len(inp1) >3:
+            var = inp1[1:-1]
+        else:
+            var = inp1
+print(var)
+
+#prev:
+
 var1 = "eren yeager"
 var2 = "s"
 y = ''
