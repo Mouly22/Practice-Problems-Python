@@ -1,7 +1,32 @@
-#Write Python code of a program that finds the number of hours, minutes, and seconds in a given number of seconds.
-#Example01: Input: 10000 Output: Hours: 2 Minutes: 46 Seconds: 40
-#==========================================================
-#Example02: Input: 500 Output: Hours: 0 Minutes: 8 Seconds: 20
+print('''Write the Python code of a program that finds the number of hours, minutes, and seconds 
+      in a given number of seconds. The number of seconds is taken as input from the user. 
+      Use: 1 hour = 60 minutes = 3600 seconds and 1 minute = 60 seconds
+      Sample Input              Sample Output
+         10000                     Hours: 2 
+                                   Minutes: 46 
+                                   Seconds: 40
+      
+          500                      Hours: 0 
+                                   Minutes: 8 
+                                   Seconds: 20
+
+      ''')
+
+inp = int(input("Enter seconds value: "))
+
+hours = inp // 3600
+rem_hours = inp % 3600
+minutes = rem_hours// 60
+seconds = rem_hours % 60
+print("Hours: " +str(hours)+ " Minutes: " +str(minutes)+ " Seconds: " +str(seconds), end = ' ')
+
+
+
+
+# #Write Python code of a program that finds the number of hours, minutes, and seconds in a given number of seconds.
+# #Example01: Input: 10000 Output: Hours: 2 Minutes: 46 Seconds: 40
+# #==========================================================
+# #Example02: Input: 500 Output: Hours: 0 Minutes: 8 Seconds: 20
 x = 500
 hr = x//3600
 p = x % 3600

@@ -1,3 +1,15 @@
+print('''Write the Python code of a program that reads a number,
+       and prints "The number is even" or "The number is odd", depending on whether the number is even or odd.''')
+
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("The number is Even")
+else:
+    print("The number if Odd.")
+
+
+
+#reading from a file:
 inp_file = open('input1a.txt', 'r')
 out_file = open('output1a.txt', 'w')
 val = inp_file.readlines()
