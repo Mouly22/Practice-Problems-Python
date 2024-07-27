@@ -1,4 +1,5 @@
-#(***)Write a Python program that asks the user for a quantity, then takes that many numbers as input and prints the maximum, minimum and average of those numbers.
+print('''Write a Python program that asks the user for a quantity, 
+then takes that many numbers as input and prints the maximum, minimum and average of those numbers.''')
 x = int(input("Enter the amount ")) 
 summ = 0
 t = 0

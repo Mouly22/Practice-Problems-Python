@@ -1,6 +1,7 @@
-#1)Write a Python program which takes a number and prints the digits from the unit place, then the tenth, then hundredth, etc. (Right to Left)
+print('''Write a Python program which takes a number and prints the digits from the unit place, 
+    then the tenth, then hundredth, etc. (Right to Left)
 #[Consider the input number to be an INTEGER. You are not allowed to use String indexing for solving this task]
-#Example: If the user gives 32768, then print 8, 6, 7, 2, 3
+#Example: If the user gives 32768, then print 8, 6, 7, 2, 3''')
 #Solve: using for loop 
 x = input("Please enter a number: ") 
 xx = int(x)
@@ -17,6 +18,26 @@ x = 32768
 while x:
     print(x%10)
     x //= 10
+
+#was thinking differently:
+val = int(input("Enter the digit: "))
+lst = []
+for i in range(len(str(val))):
+    if i == 0:
+        ans = val% 10
+        lst.append(ans)
+        rem = val // 10
+    if i>0:
+        ans = rem % 10
+        lst.append(ans)
+        rem = rem // 10
+
+for x in lst:
+    if x == lst[-1]:
+
+        print(x, end=' ')
+    else: 
+        print(x, end = ', ')
 
 
 #2)Write a Python program that takes a number and prints how many digits are in that number. [Consider the input number to be an INTEGER.] [You are not allowed to use len() function]

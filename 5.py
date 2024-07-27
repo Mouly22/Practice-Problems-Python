@@ -1,4 +1,4 @@
-#Write the python programs, which prints the following sequences of values in loops:
+# #Write the python programs, which prints the following sequences of values in loops:
 #a) 24, 18, 12, 6, 0, -6
 x = 24 
 while x >= -6:
@@ -9,7 +9,7 @@ while x >= -6:
     x -= 6
 
     
-#b)-10, -5, 0, 5, 10, 15, 20
+# #b)-10, -5, 0, 5, 10, 15, 20
 x = -10
 while x <= 20:
     if x == 20:
@@ -19,7 +19,7 @@ while x <= 20:
     x += 5
 
 
-#d)18,-27, 36,-45,54,-63
+# #d)18,-27, 36,-45,54,-63
 x = 18
 while x <= 63:
     if x%2 ==1:
@@ -29,5 +29,15 @@ while x <= 63:
             print(-x, end= ", ")    
     else:
         print(x, end = ", ")
+    x += 9
+
+print("Input: 18, 27, 36, 45, 54, 63")
+
+x = 18
+while x <= 63:
+    if x == 63:
+        print(x, end = ' ')
+    else:
+        print(x, end = ', ')
     x += 9
 

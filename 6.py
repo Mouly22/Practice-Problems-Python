@@ -37,17 +37,18 @@ for i in range(x):
         r = r + i
 print(r)
 
-#(*)Write a Python code that will calculate the value of y if the expression of y is as follows (n is the input):
-#𝑦=1^2−2^2+3^2−4^2+5^2.........+𝑛^2
-#Input 1: 5 Output 1: 15.  Input 2: 10 Output 2: -55. Input 3: 20 Output 3: -210.
-x = 20
-p =0
-for i in range(x+1):
-    if i %2 == 0:
-        p -= i*i
+print('''(*)Write a Python code that will calculate the value of y if the expression of y is as follows 
+      (n is the input): 𝑦=1^2−2^2+3^2−4^2+5^2.........+𝑛^2
+Input 1: 5 Output 1: 15.  Input 2: 10 Output 2: -55. Input 3: 20 Output 3: -210.''')
+
+val = int(input("Enter your Number: "))
+sum = 0
+for i in range(val+1):
+    if i % 2 == 0:
+        sum -= (i)**2
     else:
-        p += i*i
-print(p)
+        sum += (i)**2
+print(sum)
 
 
 #Write a Python code that will read 5 numbers from the user. Your program should print the first number, the sum of the first 2 numbers, the sum of the first 3 numbers, and so on up to the sum of 5 numbers.
@@ -57,3 +58,5 @@ for i in range(5):
     x = int(input())
     g += x
     print(g)
+
+
