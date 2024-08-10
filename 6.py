@@ -51,12 +51,27 @@ for i in range(val+1):
 print(sum)
 
 
-#Write a Python code that will read 5 numbers from the user. Your program should print the first number, the sum of the first 2 numbers, the sum of the first 3 numbers, and so on up to the sum of 5 numbers.
-#Sample Input 1: 1 2 3 4 5. Sample Output 1: 1 3 6 10 15
-g = 0
+print('''Write a Python code that will read 5 numbers from the user. 
+      Your program should print the first number, the product of the first 2 numbers, the product of the first 3 numbers,
+       and so on up to the product of 5 numbers.
+Sample Input 1:     Sample Output 1:
+    1 2 3 4 5.        1 3 6 10 15''')
+ans = 1
 for i in range(5):
-    x = int(input())
-    g += x
-    print(g)
+    inp = int(input("Enter number no " +str(i+1)+ ":"))
+    ans *= inp
+    print(ans)
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
