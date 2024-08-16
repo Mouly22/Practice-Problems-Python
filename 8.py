@@ -1,11 +1,11 @@
-print('''Write a Python program that takes a number as input from the user and prints the divisors of that number
-       as well as how many divisors the number has.
-      Sample Input 1:          Sample Output 1:
-           6                          1
-                                      2
-                                      3
-                                      6
-                              Total 4 divisors.''')
+# Write a Python program that takes a number as input from the user and prints the divisors of that number
+#        as well as how many divisors the number has.
+#       Sample Input 1:          Sample Output 1:
+#            6                          1
+#                                       2
+#                                       3
+#                                       6
+#                               Total 4 divisors.
 
 count = 0
 number = int(input("Enter a number: "))

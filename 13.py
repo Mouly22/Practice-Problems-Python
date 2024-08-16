@@ -5,7 +5,7 @@
 #                                   12
 #                                   123
 #                                   1234
-print()
+
 inp = int(input("Enter Number: "))
 for i in range(inp):
     for j in range(i+1):
@@ -17,24 +17,10 @@ for i in range(inp):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# x = 5
-# st = ""
-# for i in range(x):
-#     st += str(i+1)
-#     print(st)
+x = 5
+st = ""
+for i in range(x):
+    st += str(i+1)
+    print(st)
 
     

@@ -1,5 +1,5 @@
-print('''Write the Python code of a program that reads a number,
-       and prints "The number is even" or "The number is odd", depending on whether the number is even or odd.''')
+# Write the Python code of a program that reads a number,
+#        and prints "The number is even" or "The number is odd", depending on whether the number is even or odd.
 
 num = int(input("Enter a number: "))
 if num % 2 == 0:
